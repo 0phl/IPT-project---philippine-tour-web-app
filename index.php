@@ -17,6 +17,7 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="css/custom.css">
     <script src="js/auth.js" defer></script>
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -38,46 +39,6 @@
     </header>
 
     <!-- Hero Section with Parallax Effect -->
-    <style>
-        .parallax-section {
-            position: relative;
-            overflow: hidden;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .parallax-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 130%;
-            background-image: url('https://images.unsplash.com/photo-1573790387438-4da905039392?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80');
-            background-size: cover;
-            background-position: center;
-            filter: blur(3px);
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-            z-index: -1;
-            will-change: transform;
-            transition: transform 0.05s linear;
-        }
-        .parallax-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(10, 26, 53, 0.6);
-            z-index: -1;
-        }
-        .parallax-content {
-            z-index: 1;
-            width: 100%;
-        }
-    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const parallaxBg = document.querySelector('.parallax-bg');
